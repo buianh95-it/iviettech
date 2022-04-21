@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Invoice Calculation</title>
+  <!-- bootstrap5.1 -->
+  <link rel="stylesheet" href="https://bootswatch.com/5/yeti/bootstrap.min.css" />
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
+  <!-- font-awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body> 
+  <div class="container row mx-auto" style="background-color: #fff; height: 100%; padding: 50px 50px;">
+    <div class="mx-auto mt-5" id="mainApp">
+      <h1 class="heading text-center"> Calculate monthly electricity bill for customers</h1>
+      <form id="mainForm" class="mt-5" novalidate>
+        <fieldset>
+          <div class="input-group mb-3">
+            <span class="input-group-text" style="width: 200px">Start-up period</span>
+            <input type="text" class="form-control" id="startUpPeriod" name="startUpPeriod"
+              placeholder="">
+          </div>
+          <p class="text-Validate" id="startUpPeriodMsg"></p>
+
+          <div class="input-group mb-3">
+            <span class="input-group-text" style="width: 200px">End-of-term digits: </span>
+            <input type="text" class="form-control" id="endOfTerm" name="endOfTerm"
+              placeholder="">
+          </div>
+          <p class="text-Validate" id="endOfTermMsg"></p>
+
+          <div class="input-group mb-3">
+            <span class="input-group-text" style="width: 200px">The VAT tax: </span>
+            <input type="text" class="form-control" id="vat" name="vat"
+             value="10" >
+          </div>
+
+          <div class="input-group mb-3">
+            <span class="input-group-text" style="width: 200px">The number of letters:
+            </span>
+            <input type="text" class="form-control" id="numberOfLetters" name="numberOfLetters"  disabled placeholder="">
+          </div>
+
+          <div class="input-group mb-3">
+            <span class="input-group-text" style="width: 250px">The total amount payable:
+            </span>
+            <input disabled type="text" class="form-control" id="total" name="total" placeholder="">&ensp; 
+          </div>
+
+          <div class="input-group text-center pt-5">
+            <button style="font-size: 30px; font-weight: bold;" type="submit"
+              class="btn btn-primary" id ="output">Calculate electricity bill</button>
+
+            &nbsp;&nbsp;&nbsp;&nbsp;
+            <button type="button" style="font-size: 30px; font-weight: bold; padding: 10px 50px" id="reloadBtn"
+              class="btn btn-secondary" onclick="location.reload()"> Clear</button>
+          </div>
+        </fieldset>
+      </form>
+
+    </div>
+    <!--end mainApp-->
+    <script src="./main.js"></script>
+</body>
+</html>
