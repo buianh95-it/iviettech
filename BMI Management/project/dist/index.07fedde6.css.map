@@ -1,0 +1,1 @@
+{"mappings":"AAAA;;;;;AAKA","sources":["src/assets/css/style.css"],"sourcesContent":["body{\r\n  background-color: lightblue;\r\n  color: black;\r\n}\r\n\r\n.text-Validate{\r\n  font-size: 20px;\r\n  font-style: italic;\r\n}"],"names":[],"version":3,"file":"index.07fedde6.css.map","sourceRoot":"/__parcel_source_root/"}
