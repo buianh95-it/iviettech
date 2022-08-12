@@ -1,0 +1,1 @@
+{"mappings":"AAAA","sources":["assets/css/style.css"],"sourcesContent":[".table tbody tr:nth-child(even){\r\n  background: rgba(255, 255, 255, 0.4) !important;\r\n}"],"names":[],"version":3,"file":"index.f3b972e4.css.map","sourceRoot":"/__parcel_source_root/"}
